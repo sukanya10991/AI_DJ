@@ -1,0 +1,54 @@
+body {
+    background-image: url("bg3.png");
+    background-size: cover;
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+img {
+    width: 200px;
+    height: 180px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: white;
+    border-radius: 20px;
+}
+
+#left {
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(120, 35, 177);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+canvas {
+    border-style: solid;
+    border-width: 4px;
+    border-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#heading {
+    border-style: solid;
+    border-width: 4px;
+    border-color: white;
+    border-radius: 20px;
+}
+
+#song_name {
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 300px;
+}
+
+h3{
+    margin-left:100px;
+    margin-right:100px;
+}
