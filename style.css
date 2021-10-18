@@ -1,7 +1,7 @@
 body {
     background-image: url("bg3.png");
     background-size: cover;
-    color: white;
+    color: rgb(248,248,255);
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -11,44 +11,69 @@ img {
     height: 180px;
     border-style: solid;
     border-width: 4px;
-    border-color: white;
+    border-color: rgb(182, 150, 247);
     border-radius: 20px;
 }
 
 #left {
     border-style: solid;
-    border-width: 4px;
-    border-color: rgb(87, 10, 138);
+    border-width: 6px;
+    border-color: rgb(182, 150, 247);
     border-radius: 20px;
     padding: 20px;
+    height:580px;
 }
+
 
 canvas {
     border-style: solid;
-    border-width: 4px;
-    border-color: white;
+    border-width: 6px;
+    border-color: rgb(182, 150, 247);
     border-radius: 20px;
-    padding: 20px;
+    padding: 3px;
+    margin-top: 250px;
+    margin-left: 50px;
 }
 
 #heading {
     border-style: solid;
-    border-width: 4px;
-    border-color: white;
+    border-width: 6px;
+    border-color: rgb(182, 150, 247);
     border-radius: 20px;
+    margin-top:10px;
 }
 
 #song_name {
     border-style: solid;
-    border-width: 3px;
-    border-color: white;
-    border-radius: 5px;
+    border-width: 4.5px;
+    border-color: rgb(182, 150, 247);
+    border-radius: 8.5px;
     padding-top: 5px;
     padding-bottom: 5px;
     width: 300px;
 }
 
-h3{
-    margin-left:100px;
-    margin-right:100px;
+h3 {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#txt{
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(182, 150, 247);
+    border-radius: 8.5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 300px;
+}
+
+#txt2{
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(182, 150, 247);
+    border-radius: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 900px;
 }
