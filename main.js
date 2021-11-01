@@ -30,7 +30,6 @@ function play() {
     song1.play();
     song1.setVolume(1);
     song1.rate(1);
-    document.getElementById("song_name").innerHTML = "Song being played is- " + song1;
 }
 
 function gotPoses(results) {
@@ -62,20 +61,20 @@ function draw() {
         circle(leftwristx, leftwristy, 20);
         song2.stop();
 
-        if (song_stauts == "false") {
+        if (song_status == "false") {
             song1.play();
-            document.getElementById("song_name").innerHTML = "Song being played is- " + song1;
+            document.getElementById("song_name").innerHTML = "Song being played is- Lovesick Girls";
         }
     }
-    song2_status=song1.isPlaying();
+    song2_status = song1.isPlaying();
 
-    if (rightwristscore > 0.2){
+    if (rightwristscore > 0.2) {
         circle(rightwristx, righwristy, 20);
         song1.stop();
 
-        if (song_stauts == "false") {
+        if (song_status == "false") {
             song2.play();
-            document.getElementById("song_name").innerHTML = "Song being played is- " + song2;
+            document.getElementById("song_name").innerHTML = "Song being played is- Stay";
         }
     }
 }
