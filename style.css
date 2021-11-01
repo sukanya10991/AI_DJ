@@ -77,3 +77,12 @@ h3 {
     padding-bottom: 12px;
     width: 900px;
 }
+button{
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(182, 150, 247);
+    border-radius: 15px;
+    font-size:24px !important;
+    width:100px;
+}
+
