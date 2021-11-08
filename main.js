@@ -1,11 +1,15 @@
 song1 = "";
 song2 = "";
+
 leftwristx = 0;
 leftwristy = 0;
+
 rightwristx = 0;
 rightwristy = 0;
+
 leftwristscore = 0;
 rightwristscore = 0;
+
 song1_status = "";
 song2_status = "";
 
@@ -26,18 +30,17 @@ function setup() {
     poseNet.on('pose', gotPoses);
 }
 
-function play() {
-    song1.play();
-    song1.setVolume(1);
-    song1.rate(1);
+function modelLoaded() {
+    console.log('PoseNet is Initialized');
 }
+
 
 function gotPoses(results) {
     if (results.length > 0) {
         console.log(results);
-        scoreleftwrist = results[0].pose.keypoints[9].score;
-        scorerightwrist = results[0].pose.keypoints[10].score;
-        console.log("Score left wrist= " + scoreleftwrist + "Score right wrist" + scorerightwrist);
+        leftwristscore = results[0].pose.keypoints[9].score;
+        rightwristscore = results[0].pose.keypoints[10].score;
+        console.log("Score left wrist= " + leftwristscore  + "Score right wrist" + rightwristscore);
 
         leftwristx = results[0].pose.leftWrist.x;
         leftwristy = results[0].pose.leftWrist.y;
@@ -61,24 +64,27 @@ function draw() {
         circle(leftwristx, leftwristy, 20);
         song2.stop();
 
-        if (song_status == "false") {
+        if (song1_status == false) {
             song1.play();
             document.getElementById("song_name").innerHTML = "Song being played is- Lovesick Girls";
         }
     }
-    song2_status = song1.isPlaying();
+    song2_status = song2.isPlaying();
 
     if (rightwristscore > 0.2) {
-        circle(rightwristx, righwristy, 20);
+        circle(rightwristx, rightwristy, 20);
         song1.stop();
 
-        if (song_status == "false") {
+        if (song2_status == false) {
             song2.play();
             document.getElementById("song_name").innerHTML = "Song being played is- Stay";
         }
     }
 }
 
-function modelLoaded() {
-    console.log('PoseNet is Initialized');
+
+function play() {
+    song.play();
+    song.setVolume(1);
+    song.rate(1);
 }
